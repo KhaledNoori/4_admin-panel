@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Khaled";
+    src: url(/fonts/khaled.eot);
+    src: url("/fonts/khaled.eot?#iefix") format("embedded-opentype"),
+
+       url("/fonts/khaled.woff2") format("woff2"),
+       url("/fonts/khaled.woff") format("woff"),
+       url("fonts/khaled.ttf")format("troutype");
+
+ }
+
+ body {
+    font-family: "Khaled" !important;
+ } 
+ /* .sidebar */
+.sidebar{
+ background-color: white;
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+    transition: all 0.5s ease-out;
+    padding: 1.5rem;
+}  
+
+.sidebar.inactive{
+    margin-right: -250px;
+}
+.sidebar .sidebar-item{
+    margin-top: 0.5rem;
+}
+
+.sidebar .sidebar-item .sidebar-link{
+    text-decoration: none;
+    color: #25396f;
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+.sidebar .sidebar-item .sidebar-link:hover{
+    background-color: #f0f1f5;
+ 
+ }
+.sidebar .sidebar-item .sidebar-link i{
+    color: #7c8db5;
+}
+.sidebar .sidebar-item .sidebar-link{
+    cursor: pointer;
+}
+.sidebar .sidebar-item.active .sidebar-link {
+    background-color: #435ebe;
+    color: #fff;
+}
+.sidebar .sidebar-item.active .sidebar-link i{
+    color: #fff;
+}
+
+.sidebar .submenu{
+
+    list-style: none;
+}
+
+.sidebar .submenu .submenu-item a:hover{
+ 
+    margin: 0.3rem;
+}
+.sidebar .submenu .submenu-item a{
+ padding: 0.7rem;
+ display: block;
+ color: #25396f;
+ font-size: 0.85rem;
+ font-weight: 600;
+ text-decoration: none;
+transition: all 0.10s;
+}
+.sidebar .sidebar-item .bi-chevron-down{
+    font-size: 0.8rem;
+}
+ /* content */
+
+.main{
+    background-color: #f2f7ff;
+    height: 100vh;
+    transition: all 0.5s ease-out;
+}
+.main.active{
+
+    margin-right: 0;
+}
+
+@media (min-width:992px) {
+    .main{
+        margin-right: 250px;
+       
+    }
+}
+
+[x-cloak]{
+    display: none !important;
+}
+
+ 

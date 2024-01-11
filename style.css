@@ -38,14 +38,33 @@
     background: #555;
   
  }
+
+
+ /* utilites*/
+.text-gray{
+    color:#44494e   ;
+}
+.text-gray-600{
+    color: #6c757d;
+ }
+
+ .fs-7{
+    font-size: 0.9rem;
+ }
+.fs-8{
+    font-size: 0.8rem;
+}
+ .bg-red{
+    background-color: #ff7976;
+ }
 .sidebar{
- background-color: white;
+     background-color: white;
     width: 250px;
     position: fixed;
     height: 100vh;
     transition: all 0.5s ease-out;
     padding: 1.7rem;
-    
+    z-index: 9999;
     overflow-y: hidden;
 } 
 
@@ -59,8 +78,6 @@
 .sidebar .sidebar-item{
     margin-top: 0.5rem;
 }
-
-
 
 
 .sidebar .sidebar-item .sidebar-link{
@@ -123,6 +140,13 @@ transition: all 0.10s;
     margin-right: 0;
 }
 
+.main .toggle-saide-icon{
+    color: #364b98;
+}
+
+.main .header .profile::after{
+display: none !important;
+}
 @media (min-width:992px) {
     .main{
         margin-right: 250px;
